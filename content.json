@@ -1,0 +1,147 @@
+{
+  "layout_definitions": {
+    "current_standard": {
+      "name": "Current Standard Layout",
+      "description": "Matches the existing layout exactly",
+      "zones": {
+        "zone_a": {"x": 0, "y": 0, "width": 300, "height": 780},
+        "zone_d": {"x": 0, "y": 780, "width": 300, "height": 300},
+        "zone_e": {"x": 300, "y": 0, "width": 1620, "height": 200},
+        "zone_b": {"x": 350, "y": 200, "width": 735, "height": 830},
+        "zone_c": {"x": 1135, "y": 200, "width": 735, "height": 830},
+        "alert_zone": {"x": 300, "y": 1030, "width": 1620, "height": 50},
+        "qr_zone": {"x": 1820, "y": 980, "width": 100, "height": 100}
+      }
+    },
+    "layout_1": {
+      "name": "Standard Split",
+      "description": "Equal left-right split with all zones",
+      "zones": {
+        "zone_a": {"x": 0, "y": 0, "width": 300, "height": 780},
+        "zone_d": {"x": 0, "y": 780, "width": 300, "height": 300},
+        "zone_e": {"x": 300, "y": 0, "width": 1620, "height": 200},
+        "zone_b": {"x": 350, "y": 200, "width": 735, "height": 830},
+        "zone_c": {"x": 1135, "y": 200, "width": 735, "height": 830},
+        "alert_zone": {"x": 300, "y": 1030, "width": 1620, "height": 50},
+        "qr_zone": {"x": 1820, "y": 980, "width": 100, "height": 100}
+      }
+    },
+    "layout_2": {
+      "name": "Left Large Right Small",
+      "description": "Left zone 2/3, right zone 1/3",
+      "zones": {
+        "zone_a": {"x": 0, "y": 0, "width": 300, "height": 780},
+        "zone_d": {"x": 0, "y": 780, "width": 300, "height": 300},
+        "zone_e": {"x": 300, "y": 0, "width": 1620, "height": 200},
+        "zone_b": {"x": 300, "y": 200, "width": 1080, "height": 830},
+        "zone_c": {"x": 1380, "y": 200, "width": 540, "height": 830},
+        "alert_zone": {"x": 300, "y": 1030, "width": 1620, "height": 50},
+        "qr_zone": {"x": 1820, "y": 980, "width": 100, "height": 100}
+      }
+    },
+    "layout_3": {
+      "name": "Top-Bottom Split",
+      "description": "Equal top-bottom split layout",
+      "zones": {
+        "zone_a": {"x": 0, "y": 0, "width": 300, "height": 780},
+        "zone_d": {"x": 0, "y": 780, "width": 300, "height": 300},
+        "zone_e": {"x": 300, "y": 0, "width": 1620, "height": 200},
+        "zone_b": {"x": 300, "y": 200, "width": 1620, "height": 415},
+        "zone_c": {"x": 300, "y": 615, "width": 1620, "height": 415},
+        "alert_zone": {"x": 300, "y": 1030, "width": 1620, "height": 50},
+        "qr_zone": {"x": 1820, "y": 980, "width": 100, "height": 100}
+      }
+    },
+    "merged": {
+      "name": "Full Screen Merged",
+      "description": "Single full screen area with all peripheral zones",
+      "zones": {
+        "zone_a": {"x": 0, "y": 0, "width": 300, "height": 780},
+        "zone_d": {"x": 0, "y": 780, "width": 300, "height": 300},
+        "zone_e": {"x": 300, "y": 0, "width": 1620, "height": 200},
+        "zone_merged": {"x": 300, "y": 200, "width": 1620, "height": 830},
+        "alert_zone": {"x": 300, "y": 1030, "width": 1620, "height": 50},
+        "qr_zone": {"x": 1820, "y": 980, "width": 100, "height": 100}
+      }
+    },
+    "merged_centered": {
+      "name": "Centered Merged",
+      "description": "Centered content with margins",
+      "zones": {
+        "zone_a": {"x": 0, "y": 0, "width": 300, "height": 780},
+        "zone_d": {"x": 0, "y": 780, "width": 300, "height": 300},
+        "zone_e": {"x": 300, "y": 0, "width": 1620, "height": 200},
+        "zone_merged": {"x": 462, "y": 283, "width": 1296, "height": 664},
+        "alert_zone": {"x": 300, "y": 1030, "width": 1620, "height": 50},
+        "qr_zone": {"x": 1820, "y": 980, "width": 100, "height": 100}
+      }
+    }
+  },
+  "layout_config": {
+    "static_image_1": "asset/QR0729.png",
+    "static_image_2": "asset/GFS1620.png",
+    "static_image_3_bg": {
+      "path": "asset/BG1720.png",
+      "fill_mode": "cover"
+    },
+    "zone_a": {
+      "width": 300,
+      "height": 780
+    },
+    "zone_b": {
+      "width": 735,
+      "height": 830
+    },
+    "zone_c": {
+      "width": 735,
+      "height": 830
+    },
+    "zone_d": {
+      "width": 300,
+      "height": 300
+    },
+    "zone_e": {
+      "width": 1620,
+      "height": 200
+    },
+    "zone_merged": {
+      "width": 1620,
+      "height": 830
+    }
+  },
+  "playback_sequence": [
+    {
+      "layout": "current_standard",
+      "type": "split",
+      "zones": {
+        "zone_b": [
+          {
+            "type": "image",
+            "path": "https://budaotools-1330252305.cos.ap-guangzhou.myqcloud.com/testingfile/Chi_PlaySafe.jpg",
+            "duration": 30
+          }
+        ],
+        "zone_c": [
+          {
+            "type": "image",
+            "path": "https://budaotools-1330252305.cos.ap-guangzhou.myqcloud.com/testingfile/shoes.jpg",
+            "duration": 30
+          }
+        ]
+      }
+    },
+    {
+      "layout": "merged",
+      "type": "merged",
+      "zones": {
+        "zone_merged": [
+          {
+            "type": "image",
+            "path": "https://budaotools-1330252305.cos.ap-guangzhou.myqcloud.com/testingfile/Location%20chart.jpg",
+            "duration": 30
+          }
+        ]
+      }
+    }
+  ]
+}
